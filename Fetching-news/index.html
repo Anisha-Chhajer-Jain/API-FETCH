@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API-FETCH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+</style>
+<body>
+    <nav class="navbar-1">
+        <div class="nav-1">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+        </div>
+            <div class="right">
+        <select class="category-filter" id="category-filter">
+                    <option value="all">All Categories</option>
+                    <option value="technology">Technology</option>
+                    <option value="business">Business</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="finance">Finance</option>
+                    <option value="international">International</option>
+        </select>   
+ </div>
+    <br><br>
+    </nav>
+    
+    <nav class="navbar">
+        <div class="nav-left">
+            <h1 class="logo">News<strong style="color:#02a733;">Dashboard</strong></h1>
+        </div>
+
+        <div class="nav-center">
+            <input type="text" id="searchInput" placeholder="Search news...">
+            <button id="searchBtn">Click Here to get Data!!</button>
+        </div>
+        <div class="header-stats">
+                <div class="stat-item">
+                    <div class="stat-value">35</div>
+                    <div class="stat-label">Total Articles</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">27</div>
+                    <div class="stat-label">Today</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">8</div>
+                    <div class="stat-label">Sources</div>
+        </div>
+    </nav>
+
+
+    <div class="news-container"></div>
+
+     <footer class="dashboard-footer">
+            <p>News Dashboard &copy; 2025 • Data provided by News API • Last updated:Today <span id="last-updated"></span></p>
+            <p>Total articles loaded: <span id="footer-article-count">25</span></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
